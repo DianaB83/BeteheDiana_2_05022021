@@ -1,0 +1,132 @@
+.header {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        align-items: center;
+        margin-bottom: 15px;
+        .nav_brand {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+li {
+    margin-right: 5rem;
+    &.active {
+        border-top: 2px solid $color_primary;
+        font-weight: $color_primary;
+        &.s'incrire{
+ color: $color_primary;
+        font-weight: 700;
+    }
+}
+
+
+}
+.Titre {
+    margin-bottom: 15px;
+    h1 {
+        font-size: 1.2em;
+        margin-bottom: 5px 0;
+    }
+    
+    p {
+        font-size: 9em;
+    }
+}
+.ville_recherche {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+    .group_input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            display: flex;
+            background-color: $bag_gray;
+            height: 36px;
+            padding: 0 10px;
+            line-height: 36px;
+            border-radius: 8px 0 0 8px;
+        }
+    }
+    
+    input {
+        height: 100px;
+        border-radius: 0;
+        padding-left: 5px;
+        border: 1px solid $bg_gray;
+        font-weight: 600;
+    }
+    
+    button {
+        height: 100%;
+        border: none;
+        background-color: $color_primary;
+        color: white;
+        font-weight: 600;
+        border-radius: 0 8px 8px 0;
+    }
+}
+.filters {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    .filters-name {
+        font-size: 1.1em;
+        color: #232323f3
+    }
+}
+.filters-name {
+    flex-basis: 100%;
+}
+.filters-item {
+    line-height: 35px;
+    border: 2px solid rbg(228, 226, 226);
+    margin: 8px 15px 0;
+    height: 38px;
+    position: relative;
+    border-radius: 39px;
+    padding-right: 8px;
+    padding-left: 47px;
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 700;
+    &.hover: {
+        background-color: $color_primary;
+        color: #fff;
+        border: 2px solid $color_primary;
+    }
+}
+span {
+    display: inline-flex;
+    height: 38px;
+    width: 38px;
+    justify-content: center;
+    align-items: center;
+    color: $color_primary;
+    background-color: $bg_gray;
+    border-radius: 50%;
+    margin-right: 8px;
+    position: absolute;
+    top: -2px;
+    left: -2px
+}
+.info {
+    display: inline-block;
+    line-height: 20px;
+    border-radius: 50%;
+    width: 20px;
+    border: 1px solid $bg_gray;
+    text-align: center;
+    font-weight: 700;
+    color: $color_primary;
+    margin-right: 3px;
+}
