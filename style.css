@@ -40,7 +40,7 @@ a:hover {
 }
 
 .text-muted {
-    color: #7e7e7e;
+    color: #232323;
 }
 
 .text-gras,
@@ -53,9 +53,20 @@ strong {
     margin-top: 15px;
 }
 
-.fa-star {
+.fas {
     color: #0065FC;
 }
+
+.far {
+    color: gray
+}
+
+.fa-chart-line {
+    color: #232323
+}
+
+
+/*CSS CONTAINER*/
 
 @media (min-width: 1200px) {
     .site {
@@ -127,6 +138,9 @@ strong {
     font-size: .9em;
 }
 
+
+/* SEARCH */
+
 .header .ville_recherche {
     margin-bottom: 15px;
     display: flex;
@@ -145,15 +159,20 @@ strong {
     height: 36px;
     padding: 0 10px;
     line-height: 36px;
-    border-radius: 8px 0 0 8px;
+    border-radius: 16px 0 0 16px;
 }
 
 .header .ville_recherche .group_input input {
     height: 100%;
     border-radius: 0;
-    padding-left: 5px;
+    padding-left: 15px;
     border: 1px solid #F2F2F2;
     font-weight: 600;
+}
+
+.ville_recherche .group_input input::placeholder {
+    color: #232323;
+    font-weight: bold;
 }
 
 .header .ville_recherche .group_input button {
@@ -162,7 +181,10 @@ strong {
     background-color: #0065FC;
     color: white;
     font-weight: 600;
-    border-radius: 0 8px 8px 0;
+    border-radius: 0 16px 16px 0;
+    font-size: .9em;
+    padding: 10px;
+    margin-left: -10px;
     cursor: pointer;
 }
 
@@ -170,6 +192,9 @@ strong {
     transform: translateY(-1px);
     box-shadow: 1px 1px 1px 1px #b6b6b6;
 }
+
+
+/*FILTERS*/
 
 .header .filters {
     display: flex;
@@ -207,14 +232,14 @@ strong {
     box-shadow: 1px 1px 1px 1px #b6b6b6;
 }
 
-.header .filters .filters_item a {
+.header .filters .filters_item span {
     display: inline-flex;
     height: 38px;
     width: 38px;
     justify-content: center;
     align-items: center;
     color: #0065FC;
-    background-color: #F2F2F2;
+    background-color: #deebff;
     border-radius: 50%;
     margin-right: 8px;
     position: absolute;
@@ -259,14 +284,14 @@ h2.title {
 }
 
 .rating span {
-    font-size: .8em;
+    font-size: .75em;
 }
 
 
 /******************************************************/
 
 
-/* ACTIVITES */
+/* Hébergements populaires */
 
 
 /******************************************************/
@@ -284,8 +309,8 @@ h2.title {
     flex-direction: column;
     align-items: center;
     background-color: #F2F2F2;
-    border-radius: 8px;
-    padding: 15px;
+    border-radius: 16px;
+    padding: 20px;
 }
 
 .main .heberg aside .title {
@@ -300,9 +325,9 @@ h2.title {
 
 .main .heberg aside .card_populaire {
     display: flex;
-    padding: 5px;
+    padding: 8px;
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 16px;
     width: 90%;
     margin: 15px;
 }
@@ -321,7 +346,12 @@ h2.title {
 }
 
 .main .heberg aside .card_populaire .card_body h3 {
-    font-size: 1em;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.card_populaire_text {
+    font-size: .8em;
 }
 
 .main .heberg aside .card_populaire .card_body .rating {
@@ -337,22 +367,22 @@ h2.title {
 .main .heberg aside .card_populaire .card_image img {
     height: 100%;
     width: 100%;
-    border-radius: 8px 0 0 8px;
+    border-radius: 16x 0 0 16px;
     object-fit: cover;
     object-position: center;
 }
 
 
-/*fin populaire*/
+/*fin Hébergements populaires*/
 
 
 /*hebergement à marseille*/
 
 .main .heberg .hebergement_list {
     flex-basis: 70%;
-    padding: 15px;
-    margin: 0 15px 0 0;
-    border-radius: 8px;
+    padding: 40px 20px 40px 20px;
+    margin: 0 20px 0 0;
+    border-radius: 16px;
     background-color: #F2F2F2;
     order: 1;
     flex-grow: 1;
@@ -371,15 +401,15 @@ h2.title {
 
 .main .heberg .hebergement_list .heberg_list_group .card_hebergement {
     flex-basis: 30%;
-    height: 200px;
+    height: 175px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     background-color: #fff;
-    padding: 5px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    padding: 0;
+    border-radius: 16px;
+    margin-bottom: 10px;
 }
 
 .main .heberg .hebergement_list .heberg_list_group .card_hebergement:hover {
@@ -391,14 +421,16 @@ h2.title {
     width: 100%;
     height: 14rem;
     overflow: hidden;
-    border-radius: 8px 8px 0 0;
 }
 
 .main .heberg .hebergement_list .heberg_list_group .card_hebergement .image img {
+    flex-basis: auto;
+    height: 128%;
+    max-width: 100%;
     width: 100%;
-    height: 100%;
+    border-radius: 16px 16px 0 0;
     object-fit: cover;
-    object-position: center;
+    padding: 5px;
 }
 
 .main .heberg .hebergement_list .heberg_list_group .card_hebergement .card_body {
@@ -406,26 +438,28 @@ h2.title {
 }
 
 .main .heberg .hebergement_list .heberg_list_group .card_hebergement .card_body .card_title {
-    font-size: .8em;
+    font-size: .9em;
+    font-weight: bold;
     margin: 5px 0;
 }
 
 .main .heberg .hebergement_list .heberg_list_group .card_hebergement .card_body .card_text {
-    font-size: .9em;
+    font-size: .8em;
 }
 
 .main .heberg .hebergement_list .heberg_list_group .card_hebergement .card_body .card_text::first-letter {
     text-transform: capitalize;
 }
 
-.afficher-plus {
+.main .heberg .hebergement_list .afficher-plus {
     display: block;
     flex-basis: 100%;
+    margin-top: 30px;
     color: #232323;
     font-weight: bold;
 }
 
-.afficher-plus:hover {
+.main .heberg .hebergement_list .afficher-plus:hover {
     transform: scale(1);
 }
 
@@ -567,6 +601,17 @@ h2.title {
     .site {
         padding: 0;
     }
+    header .ville_recherche .group_input button {
+        width: 50px;
+        line-height: 20px;
+        text-decoration: none;
+    }
+    .group_input i.fas {
+        font-size: .8em;
+    }
+    .fa-search {
+        color: #0065FC;
+    }
     .header .filters .filters_name {
         flex-basis: 100%;
     }
@@ -701,13 +746,7 @@ h2.title {
 }
 
 
-/****************************************************************/
-
-
-/* Regles CSS pour tablettes */
-
-
-/****************************************************************/
+/*Regles pout tablettes*/
 
 @media (min-width: 768px) and (max-width: 1200px) {
     .site {
@@ -718,7 +757,7 @@ h2.title {
         flex-direction: column;
         width: 100%;
     }
-    .main .heberg .hebergement__list {
+    .main .heberg .hebergement_list {
         flex-basis: 100%;
         margin-right: 0;
         margin-top: 20px;
@@ -741,7 +780,7 @@ h2.title {
         flex-basis: 100%;
         padding: 0 8px;
     }
-    .main .heberg aside .card__populaire {
+    .main .heberg aside .card_populaire {
         width: 31%;
         height: 200px;
         display: flex;
@@ -754,17 +793,17 @@ h2.title {
         margin-bottom: 20px;
         margin: 0 0 20px 0 !important;
     }
-    .main .heberg aside .card__populaire .card__image {
+    .main .heberg aside .card_populaire .card_image {
         width: 100%;
         height: 200px;
         overflow: hidden;
         border-radius: 8px 8px 0 0;
     }
-    .main .heberg aside .card__populaire .card__body {
+    .main .heberg aside .card_populaire .card_body {
         width: 100%;
         flex-basis: 100px;
     }
-    .main .heberg aside .card__populaire .card__body div .card__populaire__title {
+    .main .heberg aside .card_populaire .card_body div .card_populaire_title {
         font-size: .75em;
         margin: 5px 0;
         width: 100%;
