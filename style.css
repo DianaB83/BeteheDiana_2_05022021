@@ -53,12 +53,12 @@ strong {
     margin-top: 15px;
 }
 
-.fas {
+.blue {
     color: #0065FC;
 }
 
-.far {
-    color: gray
+.grey {
+    color: #f2f2f2
 }
 
 .fa-chart-line {
@@ -131,11 +131,12 @@ strong {
 
 .header .accroche h1 {
     font-size: 1.2em;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .header .accroche p {
     font-size: .9em;
+    margin-bottom: 10px;
 }
 
 
@@ -153,13 +154,21 @@ strong {
     align-items: center;
 }
 
-.header .ville_recherche .group_input span {
+#marker {
     display: inline-block;
     background-color: #F2F2F2;
-    height: 36px;
+    height: 100%;
     padding: 0 10px;
     line-height: 36px;
     border-radius: 16px 0 0 16px;
+}
+
+#rechercher {
+    display: block;
+}
+
+#icon_rechercher {
+    display: none;
 }
 
 .header .ville_recherche .group_input input {
@@ -173,6 +182,7 @@ strong {
 .ville_recherche .group_input input::placeholder {
     color: #232323;
     font-weight: bold;
+    font-size: 15px;
 }
 
 .header .ville_recherche .group_input button {
@@ -181,9 +191,9 @@ strong {
     background-color: #0065FC;
     color: white;
     font-weight: 600;
-    border-radius: 0 16px 16px 0;
+    border-radius: 0 12px 12px 0;
     font-size: .9em;
-    padding: 10px;
+    padding: 12px;
     margin-left: -10px;
     cursor: pointer;
 }
@@ -226,8 +236,8 @@ strong {
 
 .header .filters .filters_item:hover {
     background-color: #0065FC;
+    border: 2px solid transparent;
     color: #fff;
-    border: 2px solid #0065FC;
     transform: translateY(-1px);
     box-shadow: 1px 1px 1px 1px #b6b6b6;
 }
@@ -247,11 +257,7 @@ strong {
     left: -3px;
 }
 
-.header .info {
-    margin-bottom: 25px;
-}
-
-.header .info span {
+.fa-info {
     display: inline-block;
     line-height: 20px;
     border-radius: 50%;
@@ -260,7 +266,15 @@ strong {
     text-align: center;
     font-weight: 700;
     color: #0065FC;
-    margin-right: 3px;
+    margin-right: 12px;
+}
+
+.info_info {
+    margin-top: 30px;
+    align-items: baseline;
+    line-height: 22px;
+    margin-bottom: 30px;
+    display: flex;
 }
 
 
@@ -367,7 +381,7 @@ h2.title {
 .main .heberg aside .card_populaire .card_image img {
     height: 100%;
     width: 100%;
-    border-radius: 16x 0 0 16px;
+    border-radius: 16px 0 0 16px;
     object-fit: cover;
     object-position: center;
 }
@@ -609,8 +623,11 @@ h2.title {
     .group_input i.fas {
         font-size: .8em;
     }
-    .fa-search {
-        color: #0065FC;
+    #rechercher {
+        display: none;
+    }
+    #icon_rechercher {
+        display: block;
     }
     .header .filters .filters_name {
         flex-basis: 100%;
