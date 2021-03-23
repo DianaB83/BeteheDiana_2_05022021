@@ -70,7 +70,7 @@ strong {
 
 @media (min-width: 1200px) {
     .site {
-        width: 75%;
+        width: 90%;
         margin: 0 auto;
     }
 }
@@ -313,7 +313,7 @@ h2.title {
 .main .heberg {
     display: flex;
     justify-content: stretch;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .main .heberg aside {
@@ -324,7 +324,7 @@ h2.title {
     align-items: center;
     background-color: #F2F2F2;
     border-radius: 16px;
-    padding: 20px;
+    padding: 15px;
 }
 
 .main .heberg aside .title {
@@ -394,7 +394,7 @@ h2.title {
 
 .main .heberg .hebergement_list {
     flex-basis: 70%;
-    padding: 40px 20px 40px 20px;
+    padding: 15px;
     margin: 0 20px 0 0;
     border-radius: 16px;
     background-color: #F2F2F2;
@@ -421,7 +421,7 @@ h2.title {
     align-items: flex-start;
     flex-direction: column;
     background-color: #fff;
-    padding: 0;
+    padding: 5px;
     border-radius: 16px;
     margin-bottom: 10px;
 }
@@ -482,7 +482,7 @@ h2.title {
     align-items: stretch;
     justify-content: stretch;
     flex-direction: column;
-    padding: 30px 0;
+    padding: 20px 0;
     border-radius: 8px;
     margin-bottom: 50px;
 }
@@ -768,7 +768,7 @@ h2.title {
 @media (min-width: 768px) and (max-width: 1200px) {
     .site {
         width: 100%;
-        padding: 0 16px;
+        padding: 40px 20px 40px 20px;
     }
     .heberg {
         flex-direction: column;
