@@ -1,4 +1,4 @@
-html,
+hhtml,
 body,
 ul,
 li,
@@ -99,7 +99,7 @@ strong {
     margin-bottom: 15px;
 }
 
-.header nav .navbar_brand {
+.header nav .navbar_band {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -155,12 +155,9 @@ strong {
 }
 
 #marker {
-    display: inline-block;
     background-color: #F2F2F2;
-    height: 100%;
-    padding: 0 10px;
-    line-height: 36px;
-    border-radius: 16px 0 0 16px;
+    padding: 12px;
+    border-radius: 12px 0 0 1rem;
 }
 
 #rechercher {
@@ -646,7 +643,7 @@ h2.title {
         position: relative;
         height: 160px;
     }
-    .header nav .navbar_brand {
+    .header nav .navbar_band {
         position: absolute;
         display: block;
         height: 60px;
