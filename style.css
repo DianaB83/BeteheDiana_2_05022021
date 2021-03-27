@@ -156,7 +156,7 @@ strong {
 
 #marker {
     background-color: #F2F2F2;
-    padding: 13px;
+    padding: 15px;
     border-radius: 12px 0 0 1rem;
 }
 
@@ -172,6 +172,7 @@ strong {
     height: 100%;
     border-radius: 0;
     padding-left: 15px;
+    width: 14rem;
     border: 1px solid #F2F2F2;
     font-weight: 600;
 }
